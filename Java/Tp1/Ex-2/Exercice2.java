@@ -14,9 +14,14 @@ public class Exercice2 {
         // System.out.println("Result of multiply " + n + " and " + m + " is: " + rslt);
 
         // Cercle
+        
         System.out.println("Donnez le rayon d un cercle");
         Float rayon = scanner.nextFloat();
-        System.out.println(rayon);
+        // Math.PI is double
+        double perimetre = (2 * rayon )* Math.PI;
+        double surface = (rayon*rayon)*Math.PI;
+        System.out.println("Perimetre of your cercle is : " + perimetre);
+        System.out.println("Surface of your cercle is : " + surface);
         scanner.close();
 
     }
